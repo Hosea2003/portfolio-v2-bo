@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "singularName": "skill",
+    "pluralName": "skills",
+    "displayName": "Skill",
+    "description": "Technical skills and technologies"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["frontend", "backend", "mobile", "database", "devops", "other"],
+      "default": "other"
+    },
+    "proficiency": {
+      "type": "integer",
+      "min": 0,
+      "max": 100
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
