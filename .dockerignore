@@ -1,0 +1,16 @@
+node_modules
+.tmp
+.cache
+dist
+build
+.env
+.env.*
+!.env.example
+*.log
+.git
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+PORTFOLIO_API.md
+SEED_DATA.md
